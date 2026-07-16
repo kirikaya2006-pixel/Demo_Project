@@ -1,0 +1,7 @@
+<!-- กำหนดให้สามารถใช้อักษรภาษาไทยได้ ภาษาที่มีวรรณยุก เช่นไม่เอก ไม่โท้ -->
+<meta charset="UTF-8">
+
+<!-- กำหนดขนาดให้เหมาะสมกับขนาดจอ เช่น จอคอม จอมือถือ -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="css/babel.css">
