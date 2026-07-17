@@ -1,11 +1,1 @@
-** หน้าบ้าน ใช้ชื่อ folder "Frontend" (หน้าที่ใช้แสดงผลให้ผู้ใช้งานดู)
-** หลังบ้าน ใช้ชื่อ folder "Backend" (หน้าที่ใช้คำนวณผล ระบบการทำงานแล้วค่อยส่งมาให้หน้าบ้านแสดงผล)
-
-- โดยจะเปิดผ่าน port หน้าบ้านใช้ 3000 (PHP -S 0.0.0.0:3000)
-- โดยจะเปิดผ่าน port หลังบ้านใช้ 3030 (PHP -S 0.0.0.0:3030)
-* สามารถเปลี่ยนแปลง port เองได้
-
-*** หน้าบ้าน ***
-
-
-*** หลังบ้าน ***
+lock;text-indent:5px;color:#000;background-color:#d4d4d4;font-size:12px;font-family:inherit;line-height:18px;padding:0}.role-animationEnabled.theme-default.v1 .o-action-text{transition:color 0.2s,background-color 0.2s,border-color 0.2s}.theme-default.v1 .o-action-text:hover{border-color:#9fd5b7}.theme-default.v1 .o-action-text:focus{border-color:#9fd5b7}.theme-default.v1 .o-action-text:active{border-color:#217346}.theme-default.v1 .o-action-text.role-disabled{border-color:#e1e1e1;color:#989898;cursor:default;background-color:#fff}.theme-default.v1 .o-action-text.role-disabled:hover,.theme-default.v1 .o-action-text.role-disabled:focus,.theme-default.v1 .o-action-text.role-disabled:active{border-color:#e1e1e1}.theme-default.v1 .o-action-text.role-cancelable{padding-left:20px}
