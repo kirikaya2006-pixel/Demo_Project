@@ -1,0 +1,10 @@
+body {
+    background-color: wheat;
+}
+
+.fail{
+    min-height: 100vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
