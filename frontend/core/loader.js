@@ -6,7 +6,13 @@ const loader = {
             throw new Error("Cannot Load: " + path);
         }
         const html = await response.text();
-        document.querySelector(target).innerHTML = html;
+        const element = document.querySelector(target);
+
+        if (!element) {
+            throw new Error(`Target '${target}' not found.`);
+        }
+
+        element.innerHTML = html;
     }
 
 };
