@@ -22,24 +22,24 @@
         exit();
     }
 
-    // ยิง API Register สำหรับสมัครสมาชิก
-    if(strpos($path,"/api/register") !== false && $method === 'POST') {
+    // ยิง API SIGN UP สำหรับสมัครสมาชิก
+    if(strpos($path,"/api/sign_up") !== false && $method === 'POST') {
         // ดึงโค้ด Register.php
-        require_once('route/api/register.php');
+        require_once('route/api/sign_up.php');
         exit();
     }
 
-    // ยิง API Login สำหรับเข้าสู่ระบบ
-    if(strpos($path,"/api/login") !== false && $method === "POST") {
+    // ยิง API SIGN IN สำหรับเข้าสู่ระบบ
+    if(strpos($path,"/api/sign_in") !== false && $method === "POST") {
         // ดึงโค้ด Login.php
-        require_once('route/api/login.php');
+        require_once('route/api/sign_in.php');
         exit();
     }
 
     http_response_code(404);
     echo json_encode([
         'success' => false,
-        'message' => "Not Found",
+        'message' => "ERROR 404: Not Found",
     ]);
     exit();
 ?>
