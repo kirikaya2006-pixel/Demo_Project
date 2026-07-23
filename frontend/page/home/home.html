@@ -8,8 +8,34 @@
 				<input class="input" type="text" id="input-username-signup" placeholder="Name">
 				<input class="input" type="text" id="input-email-signup" placeholder="Email">
 				<input class="input" type="password" id="input-password-signup" placeholder="Password">
-				<label><input type="checkbox"> <a href="http://localhost:2006/term-of-service" target="_blank"><span class="text-danger"><b>Term of Service</b></span></a></label>
+				<label><input type="checkbox" id="item-checkbox"> 
+					<a href="#" id="open-terms">
+						<span class="text-danger">
+							<b>Terms of Service</b>
+						</span>
+					</a>
+				</label>
 				<button onclick="signup()">Sign Up</button>
+			</div>
+		</div>
+
+		<!-- Modal -->
+		<div class="modal fade" id="termsModal" tabindex="1">
+			<div class="modal-dialog modal-lg modal-dialog-scrollable">
+				<div class="modal-content">
+					
+					<div class="modal-header">
+						<h5 class="modal-title">Term of Service</h5>
+						<button class="btn-close" data-bs-dismiss="modal"></button>
+					</div>
+
+					<div class="modal-body" id="terms-content">
+						<div class="text-center py-5">
+							<div class="spinner-border"></div>
+						</div>
+					</div>
+
+				</div>
 			</div>
 		</div>
 

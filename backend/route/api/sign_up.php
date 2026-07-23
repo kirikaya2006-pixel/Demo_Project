@@ -4,6 +4,16 @@
     $username = $get_data['username'];
     $email = $get_data['email'];
     $password = $get_data['password'];
+    $term = $get_data['term'];
+
+    if(!$term) {
+        http_response_code(400);
+        echo json_encode([
+            'success' => false,
+            'message' => "Please accept term of service", 
+        ]);
+        exit();
+    }
 
     if($username === "" || $email === "" || $password === "") {
         http_response_code(400);

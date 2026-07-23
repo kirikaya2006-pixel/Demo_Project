@@ -3,7 +3,6 @@ const Router = {
     routes: {
 
         "/": {
-
             html: "page/home/home.html",
             css: [
                 "page/home/css/home.css",
@@ -12,21 +11,21 @@ const Router = {
                 "page/home/js/home.js",
                 "page/home/js/signup.js",
                 "page/home/js/signin.js",
+                "page/home/js/modal.js",
             ]
-
         },
 
         "/customer": {
-
             html: "page/customer/index.html",
-
         },
 
         "/staff": {
-
             html: "page/staff/index.html"
+        },
 
-        }
+        "/term-of-service": {
+            html: "page/term-of-service/term-of-service.html",
+        },
 
     },
 
