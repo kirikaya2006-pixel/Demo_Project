@@ -25,7 +25,7 @@ async function signup() {
 
     try{
 
-        const response = await fetch('http://localhost:2549/api/sign_up',{
+        const response = await fetch(Config.API + '/api/sign_up',{
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

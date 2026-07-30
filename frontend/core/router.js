@@ -15,8 +15,28 @@ const Router = {
             ]
         },
 
-        "/customer": {
-            html: "page/customer/index.html",
+        "/Ra-Rose": {
+            html: "page/Ra-Rose/home.html",
+            css: [
+                "page/Ra-Rose/css/mystyle.css",
+                "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap",
+                "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Poppins:wght@300;400;500&display=swap",
+            ],
+            js: [
+                "page/Ra-Rose/js/script.js",
+            ],
+        },
+
+        "/Ra-Rose/Product": {
+            html: "page/Ra-Rose/product.html",
+            css: [
+                "page/Ra-Rose/css/mystyle.css",
+                "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap",
+                "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Poppins:wght@300;400;500&display=swap",
+            ],
+            js: [
+                "page/Ra-Rose/js/script.js",
+            ],
         },
 
         "/staff": {
@@ -41,7 +61,7 @@ const Router = {
                     const link = document.createElement("link");
 
                     link.rel = "stylesheet";
-                    link.href = css;
+                    link.href = loader.url(css);
 
                     document.head.appendChild(link);
                 });
@@ -51,11 +71,10 @@ const Router = {
                 route.js.forEach((js)=>{
                     const script = document.createElement("script");
 
-                    script.src = js;
+                    script.src = loader.url(js);
                     document.body.appendChild(script);
                 });
             }
-            console.log(route);
         }else{
             await loader.require("page/error/404.html","#app");
         }

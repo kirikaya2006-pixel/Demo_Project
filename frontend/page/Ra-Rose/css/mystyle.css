@@ -1,0 +1,724 @@
+/* ==========================================
+   RAROSE - Luxury Flower Boutique
+========================================== */
+
+:root{
+
+    /* Colors */
+
+    --primary:#E89BAF;
+    --primary-hover:#D97F96;
+
+    --secondary:#F8D9E2;
+
+    --bg:#FFF9FB;
+    --bg-soft:#FFF3F6;
+
+    --white:#FFFFFF;
+
+    --text:#44373C;
+    --text-light:#84777C;
+
+    --border:#F1D7DF;
+
+    --shadow:
+        0 10px 35px rgba(232,155,175,.15);
+
+}
+
+
+/* ==========================================
+   Global
+========================================== */
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    font-family:"Poppins",sans-serif;
+
+    background:var(--bg);
+
+    color:var(--text);
+
+    overflow-x:hidden;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-weight:600;
+
+}
+
+h1{
+
+    font-size:4rem;
+    line-height:1.1;
+
+}
+
+h2{
+
+    font-size:3rem;
+
+}
+
+p{
+
+    color:var(--text-light);
+
+    line-height:1.8;
+
+}
+
+img{
+
+    max-width:100%;
+    display:block;
+
+}
+
+section{
+
+    padding:100px 0;
+
+}
+
+
+/* ==========================================
+   Navbar
+========================================== */
+
+#rarose_nav{
+
+    padding:18px 0;
+
+    transition:.35s;
+
+    background:transparent;
+
+    z-index:999;
+
+}
+
+#rarose_nav.scrolled{
+
+    background:rgba(255,255,255,.82);
+
+    backdrop-filter:blur(16px);
+
+    box-shadow:var(--shadow);
+
+    padding:12px 0;
+
+}
+
+#rarose_nav .navbar-brand img{
+
+    height:52px;
+
+}
+
+#rarose_nav .navbar-nav{
+
+    gap:18px;
+
+}
+
+#rarose_nav .nav-link{
+
+    color:white;
+
+    font-size:.95rem;
+
+    font-weight:500;
+
+    letter-spacing:1px;
+
+    position:relative;
+
+    transition:.3s;
+
+}
+
+#rarose_nav .nav-link::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+
+    bottom:2px;
+
+    width:0;
+
+    height:2px;
+
+    background:var(--primary);
+
+    transform:translateX(-50%);
+
+    transition:.3s;
+
+}
+
+#rarose_nav .nav-link:hover::after{
+
+    width:70%;
+
+}
+
+#rarose_nav.scrolled .nav-link{
+
+    color:var(--text);
+
+}
+
+
+/* ==========================================
+   Hero
+========================================== */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    position:relative;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(32,20,24,.60) 0%,
+            rgba(32,20,24,.40) 35%,
+            rgba(32,20,24,.18) 65%,
+            rgba(32,20,24,.08) 100%
+        ),
+        url("/asset/img/hero_banner.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+}
+
+.hero-subtitle{
+
+    display:inline-flex;
+    align-items:center;
+    gap:12px;
+
+    color:rgba(255,255,255,.9);
+
+    font-size:.9rem;
+
+    font-weight:600;
+
+    letter-spacing:4px;
+
+    text-transform:uppercase;
+
+    margin-bottom:20px;
+
+    text-shadow: 0 2px 10px rgba(0,0,0,.55);
+
+}
+
+.hero-subtitle::before{
+
+    content:"";
+
+    width:45px;
+
+    height:1px;
+
+    background:#F8E6C2;
+
+}
+
+.hero-content{
+
+    max-width:580px;
+
+}
+
+.hero h1{
+
+    color:#FFFFFF;
+
+    margin-bottom:24px;
+
+    font-size:4.5rem;
+
+    line-height:1.08;
+
+    text-shadow:
+        0 3px 10px rgba(0,0,0,.45),
+        0 8px 28px rgba(0,0,0,.30);
+
+}
+
+.hero p{
+
+    color:rgba(255,255,255,.92);
+
+    max-width:520px;
+
+    font-size:1.08rem;
+
+    line-height:1.9;
+
+    text-shadow:
+        0 2px 8px rgba(0,0,0,.45);
+
+}
+
+.hero-image{
+
+    max-width:520px;
+
+    margin:auto;
+
+}
+
+.hero .btn{
+
+    padding:14px 32px;
+
+    font-weight:600;
+
+    border-radius:50px;
+
+}
+
+.hero .btn-primary{
+
+    box-shadow:
+        0 12px 25px rgba(232,155,175,.35);
+
+}
+
+.hero .btn-primary:hover{
+
+    transform:translateY(-4px);
+
+}
+
+.hero .btn-outline-light{
+
+    border:2px solid rgba(255,255,255,.85);
+
+}
+
+.hero .btn-outline-light:hover{
+
+    background:#FFFFFF;
+
+    color:var(--text);
+
+}
+
+
+/* ==========================================
+   Section Title
+========================================== */
+
+.section-title{
+
+    margin-bottom:60px;
+
+}
+
+.section-subtitle{
+
+    color:var(--primary);
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+    font-size:.9rem;
+
+    font-weight:600;
+
+}
+
+.section-title p{
+
+    max-width:600px;
+
+    margin:15px auto 0;
+
+}
+
+
+/* ==========================================
+   Buttons
+========================================== */
+
+.btn{
+
+    border-radius:50px;
+
+    padding:13px 30px;
+
+    transition:.3s;
+
+}
+
+.btn-primary{
+
+    background:var(--primary);
+
+    border-color:var(--primary);
+
+}
+
+.btn-primary:hover{
+
+    background:var(--primary-hover);
+
+    border-color:var(--primary-hover);
+
+    transform:translateY(-3px);
+
+}
+
+.btn-outline-light{
+
+    border:1px solid white;
+
+}
+
+.btn-outline-light:hover{
+
+    background:white;
+
+    color:var(--text);
+
+}
+
+
+/* ==========================================
+   About
+========================================== */
+
+#about img{
+
+    border-radius:30px;
+
+    box-shadow:var(--shadow);
+
+}
+
+
+/* ==========================================
+   Placeholder
+========================================== */
+
+#flowers,
+#services,
+#gallery{
+
+    background:var(--bg);
+
+}
+
+
+/* ==========================================
+   Contact
+========================================== */
+
+#contact{
+
+    background:var(--bg-soft);
+
+}
+
+#contact h2{
+
+    margin:20px 0;
+
+}
+
+
+/* ==========================================
+   Footer
+========================================== */
+
+footer{
+
+    background:#fff;
+
+    border-top:1px solid var(--border);
+
+}
+
+footer p{
+
+    margin:0;
+
+}
+
+
+/* ==========================================
+   Responsive
+========================================== */
+
+@media(max-width:991px){
+
+    h1{
+
+        font-size:3rem;
+
+    }
+
+    h2{
+
+        font-size:2.4rem;
+
+    }
+
+    .hero{
+
+    text-align:center;
+
+    padding:140px 0 80px;
+
+    background-position:center;
+
+    }
+
+    .hero-content{
+
+        margin:auto;
+
+    }
+
+    .hero h1{
+
+        font-size:3rem;
+
+    }
+
+    .hero p{
+
+        margin:auto;
+
+    }
+
+    .hero-image{
+
+        margin-top:50px;
+
+        max-width:380px;
+
+    }
+
+    #rarose_nav{
+
+        background:rgba(255,255,255,.95);
+
+        backdrop-filter:blur(15px);
+
+    }
+
+    #rarose_nav .nav-link{
+
+        color:var(--text);
+
+        padding:.8rem 0;
+
+    }
+
+}
+
+/*======================================
+    Featured Flower
+======================================*/
+
+#flowers{
+
+    background:#FFF7FA;
+
+}
+
+.flower-card{
+
+    background:#fff;
+
+    border-radius:32px;
+
+    overflow:hidden;
+
+    transition:.45s;
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,.06);
+
+}
+
+.flower-card:hover{
+
+    transform:
+        translateY(-14px);
+
+    box-shadow:
+        0 30px 60px rgba(0,0,0,.12);
+
+}
+
+.flower-img{
+
+    position:relative;
+
+    height:420px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    overflow:hidden;
+
+    background:
+        linear-gradient(
+            180deg,
+            #FFFDFD,
+            #FFF1F6
+        );
+
+}
+
+.flower-img::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:260px;
+
+    height:260px;
+
+    border-radius:50%;
+
+    background:
+        rgba(232,155,175,.12);
+
+}
+
+.flower-img img{
+
+    position:relative;
+
+    max-height:320px;
+
+    transition:.6s;
+
+}
+
+.flower-card:hover img{
+
+    transform:
+        scale(1.08)
+        rotate(-4deg);
+
+}
+
+.flower-info{
+
+    padding:35px;
+
+}
+
+.flower-tag{
+
+    display:inline-block;
+
+    background:#FCE8EE;
+
+    color:#C96B88;
+
+    font-size:.75rem;
+
+    font-weight:600;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    padding:8px 16px;
+
+    border-radius:50px;
+
+    margin-bottom:20px;
+
+}
+
+.flower-info h3{
+
+    margin-bottom:15px;
+
+}
+
+.flower-info p{
+
+    margin-bottom:28px;
+
+    color:#7A7075;
+
+}
+
+.flower-info a{
+
+    text-decoration:none;
+
+    color:#C96B88;
+
+    font-weight:600;
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+.flower-info a i{
+
+    transition:.3s;
+
+}
+
+.flower-info a:hover i{
+
+    transform:translateX(8px);
+
+}
