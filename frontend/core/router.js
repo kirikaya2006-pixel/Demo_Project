@@ -12,7 +12,7 @@ const Router = {
                 "page/home/js/signup.js",
                 "page/home/js/signin.js",
                 "page/home/js/modal.js",
-            ]
+            ],
         },
 
         "/Ra-Rose": {
@@ -25,6 +25,9 @@ const Router = {
             js: [
                 "page/Ra-Rose/js/script.js",
             ],
+            auth: {
+                required: true,
+            }
         },
 
         "/Ra-Rose/Product": {
@@ -55,7 +58,18 @@ const Router = {
         const route = this.routes[path];
 
         if(route){
+            if(route.auth){
+                const success = await Auth.check();
+
+                if(!success) {
+                    localStorage.clear();
+                    window.location.replace("/");
+                    return;
+                }
+            }
+
             await loader.require(route.html, "#app");
+
             if(route.css) {
                 route.css.forEach((css)=>{
                     const link = document.createElement("link");

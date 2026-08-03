@@ -9,6 +9,11 @@
             "file" => "route/api/sign_up.php",
             "auth" => false,
         ],
+
+        "/api/auth_check" => [
+            "file" => "route/api/auth_check.php",
+            "auth" => false,
+        ]
     ];
 
     $route = $routes[$path] ?? NULL;
