@@ -722,3 +722,117 @@ footer p{
     transform:translateX(8px);
 
 }
+
+/*======================================
+    Services
+======================================*/
+
+#services{
+
+    background:#FFFFFF;
+
+}
+
+.service-item{
+
+    padding:45px 28px;
+
+    transition:.35s;
+
+    border-radius:24px;
+
+    position:relative;
+
+}
+
+.service-item::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+
+    bottom:0;
+
+    transform:translateX(-50%);
+
+    width:45px;
+
+    height:2px;
+
+    background:var(--primary);
+
+    transition:.35s;
+
+}
+
+.service-item:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.service-item:hover::after{
+
+    width:90px;
+
+}
+
+.service-icon{
+
+    width:90px;
+    height:90px;
+
+    margin:auto;
+    margin-bottom:28px;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:linear-gradient(
+        180deg,
+        #FFF8FA,
+        #FCE9EF
+    );
+
+    transition:.35s;
+
+}
+
+.service-icon img{
+
+    width:48px;
+
+    height:48px;
+
+    object-fit:contain;
+
+    transition:.35s;
+
+}
+
+.service-item:hover .service-icon img{
+
+    transform:scale(1.08);
+
+}
+
+.service-item h3{
+
+    font-size:2rem;
+
+    margin-bottom:18px;
+
+}
+
+.service-item p{
+
+    max-width:280px;
+
+    margin:auto;
+
+}

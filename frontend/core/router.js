@@ -13,6 +13,7 @@ const Router = {
                 "page/home/js/signin.js",
                 "page/home/js/modal.js",
             ],
+            auth: false,
         },
 
         "/Ra-Rose": {
@@ -25,9 +26,7 @@ const Router = {
             js: [
                 "page/Ra-Rose/js/script.js",
             ],
-            auth: {
-                required: true,
-            }
+            auth: true,
         },
 
         "/Ra-Rose/Product": {
@@ -43,7 +42,7 @@ const Router = {
         },
 
         "/staff": {
-            html: "page/staff/index.html"
+            html: "page/staff/index.html",
         },
 
         "/term-of-service": {
