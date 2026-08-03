@@ -19,11 +19,4 @@
 
     // ตัวเชื่อม API
     require_once('route/router.php');
-
-    http_response_code(404);
-    echo json_encode([
-        'success' => false,
-        'message' => "ERROR 404: Not Found",
-    ]);
-    exit();
 ?>
