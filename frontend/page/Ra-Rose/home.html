@@ -404,29 +404,76 @@
 
     <!-- ================= Gallery ================= -->
 
-    <section id="gallery" class="py-5">
+    <section id="gallery">
 
         <div class="container">
 
             <div class="section-title text-center">
 
                 <span class="section-subtitle">
-
-                    GALLERY
-
+                    STORIES IN BLOOM
                 </span>
 
                 <h2>
-
-                    Floral Inspiration
-
+                    Every Flower Tells A Story
                 </h2>
+
+                <p>
+                    Click a bouquet to discover the inspiration behind each creation.
+                </p>
 
             </div>
 
-            <div class="row g-3">
+            <div class="story-grid">
 
-                <!-- Gallery -->
+                <!-- ================= Story 01 ================= -->
+
+                <article class="story-card large"
+
+                    data-image="/asset/img/gallery/pink_romance_frame.png"
+
+                    data-title="Pink Romance"
+
+                    data-category="Wedding Collection"
+
+                    data-story="Designed for an intimate garden wedding, Pink Romance combines premium blush roses, carnations, and delicate baby's breath. Wrapped in soft ivory paper with a satin ribbon, this bouquet captures the elegance, warmth, and unforgettable emotions of a couple's first day together.">
+
+                    <img src="/asset/img/gallery/pink_romance.png"
+                        alt="Pink Romance">
+
+                </article>
+
+
+                <!-- ================= Story 02 ================= -->
+
+                <article class="story-card"
+
+                    data-title="Golden Morning"
+
+                    data-category="Seasonal Bouquet"
+
+                    data-story="Inspired by the first rays of morning sunlight, Golden Morning features vibrant sunflowers paired with fresh eucalyptus and seasonal white blooms. A cheerful arrangement created to celebrate success, new beginnings, and life's happiest moments.">
+
+                    <img src="asset/img/gallery/story2.jpg"
+                        alt="Golden Morning">
+
+                </article>
+
+
+                <!-- ================= Story 03 ================= -->
+
+                <article class="story-card"
+
+                    data-title="Bloom Box"
+
+                    data-category="Luxury Gift"
+
+                    data-story="A handcrafted flower box prepared with carefully selected seasonal flowers in pastel pink and ivory tones. Designed as an elegant gift for birthdays, anniversaries, or simply to remind someone they are deeply appreciated.">
+
+                    <img src="asset/img/gallery/story3.jpg"
+                        alt="Bloom Box">
+
+                </article>
 
             </div>
 
@@ -471,3 +518,33 @@
         </div>
 
     </section>
+
+
+    <!-- Inspect UI -->
+    <div id="inspect">
+
+        <button id="inspectClose">
+
+            <i class="bi bi-x-lg"></i>
+
+        </button>
+
+        <img id="inspectImage">
+
+        <div class="inspectInfo">
+
+            <span id="inspectCategory"></span>
+
+            <h2 id="inspectTitle"></h2>
+
+            <p id="inspectStory"></p>
+
+            <small>
+
+                Press ESC to Close
+
+            </small>
+
+        </div>
+
+    </div>

@@ -25,6 +25,7 @@ const Router = {
             ],
             js: [
                 "page/Ra-Rose/js/script.js",
+                "page/Ra-Rose/js/gallery.js",
             ],
             auth: true,
         },
