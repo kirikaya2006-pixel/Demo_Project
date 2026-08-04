@@ -1098,3 +1098,16 @@ Inspection
     cursor:pointer;
 
 }
+
+/* ===== No Dropdown Arror ===== */
+.navbar .dropdown-toggle::after {
+    display: none;
+}
+
+.dropdown-toggle::after {
+    margin-left: .255em;
+    vertical-align: .255em;
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-left: .3em solid transparent;
+}
