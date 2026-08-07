@@ -11,7 +11,7 @@
     $stmt = $pdo->prepare("SELECT * FROM products");
     $stmt->execute();
 
-    $flower_db = $stmt->fetch(PDO::FETCH_ASSOC);
+    $flower_db = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
     if(!$flower_db) {
         http_response_code(400);
@@ -21,20 +21,10 @@
         exit();
     }
 
-    $flower_name = $flower_db['name'];
-    $flower_type = $flower_db['flower_type'];
-    $flower_image = $flower_db['image'];
-    $flower_description = $flower_db['description'];
-
     http_response_code(200);
     echo json_encode([
         'success' => true,
-        'data' => [
-            "flower_name" => $flower_name,
-            "flower_type" => $flower_type,
-            "flower_image" => $flower_image,
-            "flower_description" => $flower_description,
-        ],
+        'data' => $flower_db,
     ]);
     exit();
 ?>

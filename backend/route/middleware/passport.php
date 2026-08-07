@@ -5,9 +5,10 @@
     $user_DB = $stmt->fetch(PDO::FETCH_ASSOC);
 
     if(!$user_DB) {
-        http_response_code(400);
+        http_response_code(403);
         echo json_encode([
             "success" => false,
+            "message" => "Token Not Found",
         ]);
         exit();
     }

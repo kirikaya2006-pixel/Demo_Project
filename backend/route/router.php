@@ -19,6 +19,7 @@
             "file" => "route/api/user.php",
             "auth" => true,
         ],
+        
         "/api/logout" => [
             "file" => "route/api/logout.php",
             "auth" => true,
