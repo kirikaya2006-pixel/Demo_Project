@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 06, 2026 at 05:40 AM
+-- Generation Time: Aug 07, 2026 at 05:41 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -45,7 +45,9 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`id`, `name`, `flower_type`, `price`, `image`, `description`, `update_at`, `created_at`) VALUES
-(1, 'Crimson Rose', 'Rose', '1299', '/asset/rose/crimson_rose.png', 'Premium red roses arranged with elegant wrapping.', '2026-08-06 00:00:00', '2026-08-06 00:00:00');
+(1, 'Crimson Rose', 'Rose', '1299', '/asset/img/product/rose/crimson_rose.png', 'Premium red roses arranged with elegant wrapping.', '2026-08-06 00:00:00', '2026-08-06 00:00:00'),
+(2, 'Sunflower', 'Sunflower', '1299', '/asset/img/product/sunflower/sunflower.png', 'Bright sunflower bouquet full of happiness.', '2026-08-07 10:17:37', '2026-08-07 10:17:37'),
+(3, 'Pink Tulips', 'Tulip', '1129', '/asset/img/product/tulip/pink_tulip.png', 'Soft pastel tulips for warm and joyful occasions.', '2026-08-07 10:17:37', '2026-08-07 10:17:37');
 
 -- --------------------------------------------------------
 
@@ -67,7 +69,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `email`, `password`, `role`, `token`) VALUES
-(1, 'Rung', 'tester@gmail.com', '$2y$10$SdX34rKwedsj3Qp70NQNduQEFzOO8WiGUqjQ4taKnba28W5V0iaHm', 'Customer', '4f743957551382ec09ce6a9df5e460e28c567a4ac489bbf2ec1c1387e460394d'),
+(1, 'Rung', 'tester@gmail.com', '$2y$10$SdX34rKwedsj3Qp70NQNduQEFzOO8WiGUqjQ4taKnba28W5V0iaHm', 'Customer', 'e0d3d26b60b7131672b7bef445c1cad2f91f982b19c0c38dc16d26aa6817714e'),
 (4, 'test', 'test@gmail.com', '$2y$10$.U6uVxIgALt4LQppGjdeCefGjwooq6MPUWKrXjc7oqmmLyrOf89.G', 'Customer', 'bc8824be57a7dadae9489e844675b9a9b84053281be46047352fe38b819e7329'),
 (5, 'rule', 'rule_laster@gmail.com', '$2y$10$4AVqnCqTLl4QbBzJMNxcu.4tDfSKoevE1Gjh1VmoHUhXDxrsiAXiu', 'Customer', '4ffe08313a9edccc2182273d5d71a557f5c402621cd9611425822b371f6b60d2');
 
@@ -95,7 +97,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `users`
