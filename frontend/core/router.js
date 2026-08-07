@@ -27,6 +27,7 @@ const Router = {
                 "page/Ra-Rose/js/script.js",
                 "page/Ra-Rose/js/gallery.js",
                 "page/Ra-Rose/js/users.js",
+                "page/Ra-Rose/js/logout.js",
             ],
             auth: true,
         },
@@ -40,6 +41,9 @@ const Router = {
             ],
             js: [
                 "page/Ra-Rose/js/script.js",
+                "page/Ra-Rose/js/product.js",
+                "page/Ra-Rose/js/users.js",
+                "page/Ra-Rose/js/logout.js",
             ],
         },
 

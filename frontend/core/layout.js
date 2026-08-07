@@ -10,7 +10,7 @@ const Layout = {
         },
 
         "/Ra-Rose/Product": {
-            navbar: "layout/navbar/rarose_product_nav.html",
+            navbar: "layout/navbar/rarose_nav.html",
         },
 
     },
